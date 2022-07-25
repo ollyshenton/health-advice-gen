@@ -6,7 +6,7 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: "https://ollyshenton.github.io/health-advice-gen/dist/",
+  base: "/health-advice-gen/dist/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
