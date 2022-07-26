@@ -4,7 +4,11 @@
     <p v-if="advice.advice">"{{ advice.advice }}"</p>
     <img src="../assets/Dekor.svg" class="dekor" />
 
-    <Dice @click="$emit('getAdvice')" @keydown="getAdvice" id="dice-wrapper" />
+    <Dice
+      @click="$emit('getAdvice')"
+      @keydown="$emit('getAdvice')"
+      id="dice-wrapper"
+    />
   </div>
 </template>
 
